@@ -1,0 +1,16 @@
+<div class="container mb-3">
+  <div class="row">
+    <div class="col-lg-2 my-3 d-flex flex-column justify-content-center align-item-center vh-100 bg-dark-subtle">
+      <div class="row">
+        <div class="col-lg-6"><a routerLink="mobileShow" class="btn btn-primary mb-2 p-2">Show Mobiles</a></div> 
+        <div class="col-lg-6"><a routerLink="mobileAdd" class="btn btn-primary mb-2 p-2">Add Mobiles</a></div>
+        <div class="col-lg-6"><a routerLink="sendDetails" class="btn btn-primary mb-2 p-2" (click)="openDialog()">Send Details</a></div>
+        <div class="col-lg-6"><a routerLink="register" class="btn btn-primary mb-2 p-2">Register User</a></div>
+      </div>
+    </div>
+    <div class="col-lg-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+

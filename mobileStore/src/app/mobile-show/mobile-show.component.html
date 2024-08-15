@@ -1,0 +1,11 @@
+<div class="container my-3">
+    <div class="row">
+        <div class="col-lg-3" *ngFor="let item of mobilelist">
+            <div class="card shadow-lg w-5" >
+                <div class="card-header">{{item.productName}}</div>
+                <img [src]="item.productImage" class="card-img-top" width="300px" height="220px">
+                <div class="card-footer">{{item.productPrice}}</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container my-3">
+    <div class="row bg-dark text-light p-3">
+        <div class="col-md-12">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <label class="form-label mt-2" for="productName">Product Name</label>
+                <input type="text" id="productName" class="form-control" formControlName="productName">
+
+                <label class="form-label mt-2" for="productImg">Product Image Url</label>
+                <input type="text" id="productImg" class="form-control" formControlName="productImage">
+
+                <label class="form-label mt-2" for="productPrice">Product Price</label>
+                <input type="text" id="productPrice" class="form-control" formControlName="productPrice">
+
+                <button class="btn btn-success mt-3 py-1" type="submit" [disabled]="!form.valid" (click)="onSubmit()">Add Mobile</button>
+            </form>
+        </div>
+        
+    </div>
+</div>
