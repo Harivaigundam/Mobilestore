@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/mobileAdd",
+    "/mobileShow",
+    "/register",
+    "/sendDetails"
+  ]
+}
